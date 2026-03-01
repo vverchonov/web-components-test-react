@@ -1,3 +1,4 @@
+import { Card } from '@vverchonov/web-components/react'
 import ExampleBlock from '../../components/ExampleBlock'
 import PropsTable from '../../components/PropsTable'
 import { componentPropsConfig } from '../../data/componentPropsConfig'
@@ -15,54 +16,54 @@ export default function CardPage() {
 
       <ExampleBlock
         title="Elevated"
-        code={`<app-card variant="elevated">
+        code={`<Card variant="elevated">
   <span slot="title">Elevated card</span>
   <p>This card uses a box-shadow to stand out from the surface.</p>
-</app-card>`}
+</Card>`}
       >
-        <app-card variant="elevated">
+        <Card variant="elevated">
           <span slot="title">Elevated card</span>
           <p>This card uses a box-shadow to stand out from the surface.</p>
-        </app-card>
+        </Card>
       </ExampleBlock>
 
       <ExampleBlock
         title="Outlined"
-        code={`<app-card variant="outlined">
+        code={`<Card variant="outlined">
   <span slot="title">Outlined card</span>
   <p>This card has a visible border instead of a shadow.</p>
-</app-card>`}
+</Card>`}
       >
-        <app-card variant="outlined">
+        <Card variant="outlined">
           <span slot="title">Outlined card</span>
           <p>This card has a visible border instead of a shadow.</p>
-        </app-card>
+        </Card>
       </ExampleBlock>
 
       <ExampleBlock
         title="Filled"
-        code={`<app-card variant="filled">
+        code={`<Card variant="filled">
   <span slot="title">Filled card</span>
   <p>This card uses a filled background for emphasis.</p>
-</app-card>`}
+</Card>`}
       >
-        <app-card variant="filled">
+        <Card variant="filled">
           <span slot="title">Filled card</span>
           <p>This card uses a filled background for emphasis.</p>
-        </app-card>
+        </Card>
       </ExampleBlock>
 
       <ExampleBlock
         title="Collapsible"
-        code={`<app-card variant="outlined" collapsible>
+        code={`<Card variant="outlined" collapsible>
   <span slot="title">Collapsible card</span>
   <p>Click the header to expand or collapse this content.</p>
-</app-card>`}
+</Card>`}
       >
-        <app-card variant="outlined" collapsible>
+        <Card variant="outlined" collapsible>
           <span slot="title">Collapsible card</span>
           <p>Click the header to expand or collapse this content.</p>
-        </app-card>
+        </Card>
       </ExampleBlock>
 
       <PropsTable {...componentPropsConfig.card} tokens={componentTokensMap.card} />
