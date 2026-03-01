@@ -3,7 +3,7 @@ import { getTokensByNames } from '../data/designTokens'
 
 function Code({ children }) {
   return (
-    <code className="font-mono text-sm rounded px-1 py-0.5 bg-[var(--color-surface-elevated)] border border-[var(--color-border)]">
+    <code className="font-mono text-sm rounded px-1 py-0.5 bg-[var(--color-surface-elevated)] border border-[var(--color-border)] text-[var(--color-text)]">
       {children}
     </code>
   )
@@ -13,7 +13,7 @@ function TableSection({ title, children }) {
   return (
     <section className="space-y-3">
       <h2 className="text-lg font-medium text-[var(--color-text)]">{title}</h2>
-      <div className="overflow-x-auto rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface-elevated)]">
+      <div className="overflow-x-auto rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface-elevated)] text-[var(--color-text)]">
         {children}
       </div>
     </section>
